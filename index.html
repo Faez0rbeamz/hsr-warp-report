@@ -89,10 +89,10 @@ footer{margin-top:72px;padding-top:22px;border-top:1px solid var(--rail);font:40
 .bgpat{position:fixed;inset:0;width:100%;height:100%;z-index:-1;opacity:.07;pointer-events:none}
 .cast{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--rail);border:1px solid var(--rail);margin:34px 0 0}
 .cast>div{background:var(--panel);padding:20px;display:flex;align-items:center;gap:15px;border-top:2px solid var(--acc)}
-.cast .emb{width:60px;height:60px;flex:none;color:var(--acc)}
+.cast .emb{width:74px;height:74px;flex:none;color:var(--acc)}
 .cast .nm{font-family:"Anybody",sans-serif;font-weight:700;font-stretch:112%;font-size:16px;line-height:1.12;text-transform:uppercase;color:var(--acc)}
 .cast .rl{font:400 10px/1.45 "Space Mono",monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin-top:6px}
-.fave .emb{width:70px;height:70px;color:var(--acc);margin:2px 0 16px}
+.fave .emb{width:104px;height:104px;color:var(--acc);margin:0 0 16px}
 h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;--ring1:0;--ring2:0}
 @media(max-width:720px){.split{grid-template-columns:1fr}ul.eids{columns:1}.railbox svg{height:150px}.faves{grid-template-columns:1fr}.cast{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:no-preference){.kpi .n,.ratio{animation:rise .5s ease-out both}@keyframes rise{from{opacity:0;transform:translateY(6px)}}}
@@ -144,17 +144,92 @@ h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;-
 </g>
 </symbol>
 
+<clipPath id="cl-r"><circle cx="60" cy="60" r="57"/></clipPath>
+<linearGradient id="g-visor" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7CC4F0"/><stop offset="1" stop-color="#8B7BF5"/></linearGradient>
+
+<symbol id="pt-sw" viewBox="0 0 120 120">
+<circle cx="60" cy="60" r="58" fill="#0A0C16"/>
+<g clip-path="url(#cl-r)">
+<path d="M60 16 C37 16 26 31 26 51 C26 63 23 74 19 86 L19 118 L101 118 L101 86 C97 74 94 63 94 51 C94 31 83 16 60 16 Z" fill="#AEB6CE"/>
+<path d="M24 56 C13 70 10 92 14 118 L34 118 C28 96 28 74 34 58 Z" fill="#C3CADF"/>
+<path d="M96 56 C107 70 110 92 106 118 L86 118 C92 96 92 74 86 58 Z" fill="#C3CADF"/>
+<path d="M43 46 C43 39 50 35 60 35 C70 35 77 39 77 46 L77 62 C77 75 70 82 60 82 C50 82 43 75 43 62 Z" fill="#F2E5DB"/>
+<path d="M33 52 L33 40 C36 28 47 22 60 22 C73 22 84 28 87 40 L87 52 C84 44 78 40 71 42 L64 36 L57 43 L49 37 L42 45 Z" fill="#CBD3E7"/>
+<rect x="39" y="50" width="42" height="11" rx="5.5" fill="url(#g-visor)"/>
+<rect x="41.5" y="52.5" width="15" height="2.4" rx="1.2" fill="#EAF6FF" opacity=".55"/>
+<path d="M56 71 Q60 74 64 71" fill="none" stroke="#C79C93" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M16 118 C22 100 38 90 60 90 C82 90 98 100 104 118 Z" fill="#1E1A30"/>
+<path d="M60 90 L48 118 L40 118 L52 92 Z" fill="#6B5BD6"/>
+<path d="M60 90 L72 118 L80 118 L68 92 Z" fill="#6B5BD6"/>
+<path d="M60 90 L56 104 L60 118 L64 104 Z" fill="#7CC4F0" opacity=".8"/>
+<rect x="14" y="32" width="6" height="6" fill="#7CC4F0" opacity=".9"/>
+<rect x="100" y="42" width="5" height="5" fill="#F06FD0" opacity=".8"/>
+<rect x="103" y="60" width="8" height="3" fill="#7CC4F0" opacity=".55"/>
+<rect x="10" y="62" width="4" height="4" fill="#7E7BF5" opacity=".75"/>
+<rect x="96" y="26" width="3" height="3" fill="#7CC4F0" opacity=".6"/>
+</g>
+<circle cx="60" cy="60" r="57.2" fill="none" stroke="#7E7BF5" stroke-opacity=".55" stroke-width="1.6"/>
+</symbol>
+
+<symbol id="pt-th" viewBox="0 0 120 120">
+<circle cx="60" cy="60" r="58" fill="#0A0C16"/>
+<g clip-path="url(#cl-r)">
+<path d="M60 26 C40 26 32 42 32 60 C32 82 30 100 26 118 L94 118 C90 100 88 82 88 60 C88 42 80 26 60 26 Z" fill="#EFE2C6"/>
+<path d="M32 60 C28 82 24 100 20 118 L34 118 C34 98 34 78 36 62 Z" fill="#DBCCAA"/>
+<path d="M88 60 C92 82 96 100 100 118 L86 118 C86 98 86 78 84 62 Z" fill="#DBCCAA"/>
+<path d="M46 52 C46 47 52 44 60 44 C68 44 74 47 74 52 L74 66 C74 78 68 84 60 84 C52 84 46 78 46 66 Z" fill="#F5E7DC"/>
+<path d="M51 61 L57 61M63 61 L69 61" stroke="#8B5FC4" stroke-width="3" stroke-linecap="round"/>
+<path d="M56 73 Q60 76 64 73" fill="none" stroke="#C79C93" stroke-width="1.6" stroke-linecap="round"/>
+<ellipse cx="60" cy="42" rx="48" ry="12" fill="#43296B"/>
+<ellipse cx="60" cy="39.5" rx="48" ry="11.5" fill="#66459B"/>
+<path d="M60 4 C50 9 44 24 42 39 L78 39 C76 24 70 9 60 4 Z" fill="#7A52B4"/>
+<path d="M60 4 C56 9 53 24 52 39 L42 39 C44 24 50 9 60 4 Z" fill="#5E3D91"/>
+<path d="M43.6 31 L76.4 31 L77.6 39 L42.4 39 Z" fill="#E0B24C"/>
+<path d="M84 21 L86.5 28.5 L94 31 L86.5 33.5 L84 41 L81.5 33.5 L74 31 L81.5 28.5 Z" fill="#E0B24C"/>
+<path d="M22 118 C28 102 42 94 60 94 C78 94 92 102 98 118 Z" fill="#241A38"/>
+<path d="M60 94 L52 118 L46 118 L54 96 Z" fill="#E0B24C" opacity=".8"/>
+<path d="M60 94 L68 118 L74 118 L66 96 Z" fill="#E0B24C" opacity=".8"/>
+</g>
+<circle cx="60" cy="60" r="57.2" fill="none" stroke="#B77CE0" stroke-opacity=".55" stroke-width="1.6"/>
+</symbol>
+
+<symbol id="pt-fx" viewBox="0 0 120 120">
+<circle cx="60" cy="60" r="58" fill="#0A0C16"/>
+<g clip-path="url(#cl-r)">
+<path d="M60 18 C36 18 26 34 26 56 C26 80 22 100 18 118 L102 118 C98 100 94 80 94 56 C94 34 84 18 60 18 Z" fill="#B44A62"/>
+<path d="M26 56 C22 82 18 102 14 118 L32 118 C32 96 32 76 34 58 Z" fill="#E4738A"/>
+<path d="M94 56 C98 82 102 102 106 118 L88 118 C88 96 88 76 86 58 Z" fill="#E4738A"/>
+<path d="M44 46 C44 40 51 37 60 37 C69 37 76 40 76 46 L76 62 C76 75 69 82 60 82 C51 82 44 75 44 62 Z" fill="#F5E4DA"/>
+<path d="M32 50 L32 38 C35 26 46 20 60 20 C74 20 85 26 88 38 L88 50 C85 42 79 38 72 40 L60 32 L48 40 C41 38 35 42 32 50 Z" fill="#E4738A"/>
+<path d="M49 58 L56 58M64 58 L71 58" stroke="#C93B58" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M56 71 Q60 74 64 71" fill="none" stroke="#C79C93" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M60 40 L65 46 L60 52 L55 46 Z" fill="#D9B45E"/>
+<circle cx="60" cy="46" r="1.7" fill="#3A2418"/>
+<path d="M34 34 C42 24 50 20 60 20 C70 20 78 24 86 34" fill="none" stroke="#D9B45E" stroke-width="3" stroke-linecap="round"/>
+<circle cx="34" cy="34" r="3.4" fill="#D9B45E"/>
+<circle cx="86" cy="34" r="3.4" fill="#D9B45E"/>
+<path d="M34 38 L34 49M86 38 L86 49" stroke="#D9B45E" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="34" cy="51.5" r="2.4" fill="#D9B45E"/>
+<circle cx="86" cy="51.5" r="2.4" fill="#D9B45E"/>
+<path d="M18 118 C24 100 40 90 60 90 C80 90 96 100 102 118 Z" fill="#2A1220"/>
+<path d="M60 90 L50 118 L43 118 L53 92 Z" fill="#B3495A"/>
+<path d="M60 90 L70 118 L77 118 L67 92 Z" fill="#B3495A"/>
+<path d="M60 96 L56 106 L60 118 L64 106 Z" fill="#D9B45E" opacity=".85"/>
+</g>
+<circle cx="60" cy="60" r="57.2" fill="none" stroke="#E86A80" stroke-opacity=".55" stroke-width="1.6"/>
+</symbol>
+
 </defs></svg>
 
 <svg class="bgpat" aria-hidden="true" focusable="false">
 <defs>
 <pattern id="warppat" width="330" height="330" patternUnits="userSpaceOnUse" patternTransform="rotate(-9)">
-<use href="#em-sw" x="22" y="26" width="64" height="64" style="color:#9B7BE8"/>
-<use href="#em-th" x="200" y="106" width="64" height="64" style="color:#7FD4E8"/>
-<use href="#em-fx" x="96" y="214" width="64" height="64" style="color:#E86FA8"/>
-<use href="#em-th" x="258" y="258" width="34" height="34" style="color:#7FD4E8"/>
-<use href="#em-sw" x="162" y="18" width="30" height="30" style="color:#9B7BE8"/>
-<use href="#em-fx" x="16" y="150" width="28" height="28" style="color:#E86FA8"/>
+<use href="#em-sw" x="22" y="26" width="64" height="64" style="color:#7E7BF5"/>
+<use href="#em-th" x="200" y="106" width="64" height="64" style="color:#B77CE0"/>
+<use href="#em-fx" x="96" y="214" width="64" height="64" style="color:#E86A80"/>
+<use href="#em-th" x="258" y="258" width="34" height="34" style="color:#B77CE0"/>
+<use href="#em-sw" x="162" y="18" width="30" height="30" style="color:#7E7BF5"/>
+<use href="#em-fx" x="16" y="150" width="28" height="28" style="color:#E86A80"/>
 </pattern>
 </defs>
 <rect width="100%" height="100%" fill="url(#warppat)"/>
@@ -170,14 +245,14 @@ h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;-
 <div>Stellar jade equivalent<b class="mono">1,734,400</b></div>
 </div>
 <div class="cast">
-<div style="--acc:#9B7BE8"><svg class="emb"><use href="#em-sw"/></svg><div><div class="nm">Silver Wolf<br>LV.999</div><div class="rl">E2 &middot; 3 copies</div></div></div>
-<div style="--acc:#7FD4E8"><svg class="emb"><use href="#em-th"/></svg><div><div class="nm">The Herta</div><div class="rl">E1 &middot; 2 copies</div></div></div>
-<div style="--acc:#E86FA8"><svg class="emb"><use href="#em-fx"/></svg><div><div class="nm">Fu Xuan</div><div class="rl">E4 &middot; 5 copies</div></div></div>
+<div style="--acc:#7E7BF5"><svg class="emb"><use href="#pt-sw"/></svg><div><div class="nm">Silver Wolf<br>LV.999</div><div class="rl">E2 &middot; 3 copies</div></div></div>
+<div style="--acc:#B77CE0"><svg class="emb"><use href="#pt-th"/></svg><div><div class="nm">The Herta</div><div class="rl">E1 &middot; 2 copies</div></div></div>
+<div style="--acc:#E86A80"><svg class="emb"><use href="#pt-fx"/></svg><div><div class="nm">Fu Xuan</div><div class="rl">E4 &middot; 5 copies</div></div></div>
 </div>
 </header>
 
 <section>
-<h2><svg class="hm" style="color:#9B7BE8"><use href="#em-sw"/></svg>The short version</h2>
+<h2><svg class="hm" style="color:#7E7BF5"><use href="#em-sw"/></svg>The short version</h2>
 <p class="lead">Across 10,840 warps you won 59 of 84 contested 50/50s on the character banner &mdash; 70.2%, against a true rate of 50%. Getting that many wins or better from a fair coin is roughly a 1-in-7,500 result. Your light cone banner, by contrast, is dead average.</p>
 <div class="kpis">
 <div class="kpi"><div class="n gold">70%</div><div class="l">Character 50/50 win rate</div></div>
@@ -188,7 +263,7 @@ h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;-
 </section>
 
 <section>
-<h2><svg class="hm" style="color:#7FD4E8"><use href="#em-th"/></svg>Every five-star, plotted</h2>
+<h2><svg class="hm" style="color:#B77CE0"><use href="#em-th"/></svg>Every five-star, plotted</h2>
 <p class="lead">One tick per five-star, positioned by date. Three lanes, one per banner family.</p>
 <div class="railbox"><svg viewBox="0 0 1200 150" preserveAspectRatio="none" role="img" aria-label="Timeline of all 174 five-star pulls from April 2023 to July 2026, split into three lanes by banner type."><style>.lane{fill:#8C96B0;font:400 11px "Space Mono",monospace;letter-spacing:.08em;text-transform:uppercase}.yr{fill:#5C6A8A;font:400 11px "Space Mono",monospace}</style><line x1="257.3" y1="8" x2="257.3" y2="128" stroke="#2A3149" stroke-width="1"/><text x="262.3" y="142" class="yr">2024</text><line x1="621.8" y1="8" x2="621.8" y2="128" stroke="#2A3149" stroke-width="1"/><text x="626.8" y="142" class="yr">2025</text><line x1="985.2" y1="8" x2="985.2" y2="128" stroke="#2A3149" stroke-width="1"/><text x="990.2" y="142" class="yr">2026</text><line x1="14" y1="26" x2="1186" y2="26" stroke="#39415C" stroke-width="1"/><line x1="14" y1="70" x2="1186" y2="70" stroke="#39415C" stroke-width="1"/><line x1="14" y1="114" x2="1186" y2="114" stroke="#39415C" stroke-width="1"/><text x="14" y="6" class="lane">Character event warp</text><text x="14" y="50" class="lane">Light cone event warp</text><text x="14" y="94" class="lane">Stellar &amp; departure warp</text><rect x="14.0" y="101" width="2" height="26" fill="#5C6A8A" opacity=".92"><title>Clara — 2023-05-01 — pity 50</title></rect><rect x="16.1" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Seele — 2023-05-03 — pity 46</title></rect><rect x="24.9" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Gepard — 2023-05-12 — pity 7</title></rect><rect x="26.3" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Seele — 2023-05-14 — pity 79</title></rect><rect x="26.3" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Seele — 2023-05-14 — pity 22</title></rect><rect x="28.0" y="101" width="2" height="26" fill="#5C6A8A" opacity=".92"><title>Himeko — 2023-05-15 — pity 75</title></rect><rect x="30.0" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Seele — 2023-05-17 — pity 75</title></rect><rect x="36.9" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Jing Yuan — 2023-05-24 — pity 77</title></rect><rect x="50.7" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Silver Wolf — 2023-06-07 — pity 83</title></rect><rect x="51.8" y="101" width="2" height="26" fill="#5C6A8A" opacity=".92"><title>Light Cone #23004 — 2023-06-08 — pity 76</title></rect><rect x="62.0" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Silver Wolf — 2023-06-18 — pity 78</title></rect><rect x="63.1" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Himeko — 2023-06-19 — pity 75</title></rect><rect x="64.8" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Silver Wolf — 2023-06-21 — pity 76</title></rect><rect x="75.7" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Gepard — 2023-07-02 — pity 78</title></rect><rect x="83.1" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Luocha — 2023-07-10 — pity 76</title></rect><rect x="97.7" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Bronya — 2023-07-24 — pity 75</title></rect><rect x="103.6" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Blade — 2023-07-30 — pity 80</title></rect><rect x="117.4" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Kafka — 2023-08-13 — pity 75</title></rect><rect x="118.7" y="101" width="2" height="26" fill="#5C6A8A" opacity=".92"><title>Himeko — 2023-08-14 — pity 77</title></rect><rect x="134.3" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Dan Heng • Imbibitor Lunae — 2023-08-30 — pity 80</title></rect><rect x="139.8" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Dan Heng • Imbibitor Lunae — 2023-09-04 — pity 76</title></rect><rect x="147.3" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Dan Heng • Imbibitor Lunae — 2023-09-12 — pity 37</title></rect><rect x="155.5" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Fu Xuan — 2023-09-20 — pity 79</title></rect><rect x="155.5" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Bronya — 2023-09-20 — pity 7</title></rect><rect x="157.4" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23011 — 2023-09-22 — pity 68</title></rect><rect x="166.3" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Fu Xuan — 2023-10-01 — pity 68</title></rect><rect x="178.2" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Jingliu — 2023-10-13 — pity 75</title></rect><rect x="192.4" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Yanqing — 2023-10-27 — pity 15</title></rect><rect x="196.2" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Seele — 2023-10-31 — pity 79</title></rect><rect x="211.2" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Bronya — 2023-11-15 — pity 80</title></rect><rect x="213.7" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Huohuo — 2023-11-18 — pity 83</title></rect><rect x="213.7" y="101" width="2" height="26" fill="#5C6A8A" opacity=".92"><title>Light Cone #23004 — 2023-11-18 — pity 78</title></rect><rect x="235.2" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Argenti — 2023-12-09 — pity 76</title></rect><rect x="254.9" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Ruan Mei — 2023-12-29 — pity 75</title></rect><rect x="283.9" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23020 — 2024-01-27 — pity 69</title></rect><rect x="294.0" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Black Swan — 2024-02-06 — pity 80</title></rect><rect x="294.0" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23022 — 2024-02-06 — pity 68</title></rect><rect x="316.8" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Sparkle — 2024-02-29 — pity 64</title></rect><rect x="326.6" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23021 — 2024-03-10 — pity 70</title></rect><rect x="343.5" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Welt — 2024-03-27 — pity 6</title></rect><rect x="343.5" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Acheron — 2024-03-27 — pity 78</title></rect><rect x="343.5" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23024 — 2024-03-27 — pity 69</title></rect><rect x="343.9" y="101" width="2" height="26" fill="#5C6A8A" opacity=".92"><title>Bronya — 2024-03-28 — pity 78</title></rect><rect x="348.6" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Acheron — 2024-04-01 — pity 34</title></rect><rect x="357.5" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Gepard — 2024-04-10 — pity 75</title></rect><rect x="357.5" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Acheron — 2024-04-10 — pity 10</title></rect><rect x="364.9" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Aventurine — 2024-04-18 — pity 77</title></rect><rect x="364.9" y="57" width="2" height="26" fill="#C2646E" opacity=".92"><title>Light Cone #23004 — 2024-04-18 — pity 37</title></rect><rect x="369.4" y="57" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Light Cone #23023 — 2024-04-22 — pity 69</title></rect><rect x="377.4" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23014 — 2024-04-30 — pity 28</title></rect><rect x="385.3" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Topaz — 2024-05-08 — pity 76</title></rect><rect x="385.3" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23016 — 2024-05-08 — pity 20</title></rect><rect x="389.3" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Robin — 2024-05-12 — pity 34</title></rect><rect x="395.4" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23026 — 2024-05-18 — pity 70</title></rect><rect x="407.2" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Clara — 2024-05-30 — pity 21</title></rect><rect x="419.2" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Fu Xuan — 2024-06-11 — pity 77</title></rect><rect x="419.2" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Fu Xuan — 2024-06-11 — pity 6</title></rect><rect x="427.4" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Sam — 2024-06-19 — pity 79</title></rect><rect x="428.2" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23025 — 2024-06-20 — pity 69</title></rect><rect x="428.3" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23019 — 2024-06-20 — pity 27</title></rect><rect x="428.3" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23019 — 2024-06-20 — pity 3</title></rect><rect x="431.1" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Clara — 2024-06-23 — pity 83</title></rect><rect x="442.0" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Sam — 2024-07-04 — pity 83</title></rect><rect x="442.0" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Sam — 2024-07-04 — pity 76</title></rect><rect x="444.7" y="101" width="2" height="26" fill="#5C6A8A" opacity=".92"><title>Light Cone #23005 — 2024-07-07 — pity 80</title></rect><rect x="449.1" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Gepard — 2024-07-11 — pity 83</title></rect><rect x="451.1" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Jade — 2024-07-13 — pity 33</title></rect><rect x="468.6" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Welt — 2024-07-31 — pity 5</title></rect><rect x="472.1" y="57" width="2" height="26" fill="#C2646E" opacity=".92"><title>Light Cone #23004 — 2024-08-03 — pity 72</title></rect><rect x="481.5" y="57" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Light Cone #23017 — 2024-08-13 — pity 69</title></rect><rect x="490.9" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Jiaoqiu — 2024-08-22 — pity 78</title></rect><rect x="490.9" y="57" width="2" height="26" fill="#C2646E" opacity=".92"><title>Light Cone #23005 — 2024-08-22 — pity 68</title></rect><rect x="490.9" y="57" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Light Cone #23029 — 2024-08-22 — pity 3</title></rect><rect x="509.4" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Feixiao — 2024-09-10 — pity 74</title></rect><rect x="509.4" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23031 — 2024-09-10 — pity 45</title></rect><rect x="509.4" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Feixiao — 2024-09-10 — pity 27</title></rect><rect x="510.0" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Clara — 2024-09-10 — pity 77</title></rect><rect x="518.7" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Feixiao — 2024-09-19 — pity 74</title></rect><rect x="532.7" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Lingsha — 2024-10-03 — pity 78</title></rect><rect x="532.7" y="57" width="2" height="26" fill="#C2646E" opacity=".92"><title>Light Cone #23002 — 2024-10-03 — pity 69</title></rect><rect x="532.7" y="57" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Light Cone #23032 — 2024-10-03 — pity 37</title></rect><rect x="552.6" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Rappa — 2024-10-23 — pity 79</title></rect><rect x="552.6" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23033 — 2024-10-23 — pity 71</title></rect><rect x="553.7" y="101" width="2" height="26" fill="#5C6A8A" opacity=".92"><title>Light Cone #23004 — 2024-10-24 — pity 60</title></rect><rect x="558.1" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Rappa — 2024-10-29 — pity 78</title></rect><rect x="574.6" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Acheron — 2024-11-14 — pity 83</title></rect><rect x="574.6" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Bailu — 2024-11-14 — pity 79</title></rect><rect x="574.6" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Aventurine — 2024-11-14 — pity 76</title></rect><rect x="577.0" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Acheron — 2024-11-17 — pity 74</title></rect><rect x="591.7" y="101" width="2" height="26" fill="#5C6A8A" opacity=".92"><title>Yanqing — 2024-12-01 — pity 23</title></rect><rect x="594.1" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Clara — 2024-12-04 — pity 76</title></rect><rect x="594.1" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Sunday — 2024-12-04 — pity 75</title></rect><rect x="597.4" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23034 — 2024-12-07 — pity 52</title></rect><rect x="597.4" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23010 — 2024-12-07 — pity 70</title></rect><rect x="615.5" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Fugue — 2024-12-25 — pity 74</title></rect><rect x="615.5" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23035 — 2024-12-25 — pity 67</title></rect><rect x="635.4" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Welt — 2025-01-14 — pity 78</title></rect><rect x="635.9" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>The Herta — 2025-01-15 — pity 81</title></rect><rect x="635.9" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23037 — 2025-01-15 — pity 11</title></rect><rect x="635.9" y="57" width="2" height="26" fill="#C2646E" opacity=".92"><title>Light Cone #23012 — 2025-01-15 — pity 70</title></rect><rect x="635.9" y="57" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Light Cone #23028 — 2025-01-15 — pity 67</title></rect><rect x="649.2" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Lingsha — 2025-01-28 — pity 76</title></rect><rect x="652.2" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Welt — 2025-01-31 — pity 79</title></rect><rect x="657.5" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Aglaea — 2025-02-05 — pity 75</title></rect><rect x="657.5" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23036 — 2025-02-05 — pity 68</title></rect><rect x="657.6" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Boothill — 2025-02-06 — pity 80</title></rect><rect x="678.1" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Tribbie — 2025-02-26 — pity 77</title></rect><rect x="678.1" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23038 — 2025-02-26 — pity 69</title></rect><rect x="683.2" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Bronya — 2025-03-03 — pity 47</title></rect><rect x="695.1" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Yunli — 2025-03-15 — pity 77</title></rect><rect x="695.3" y="101" width="2" height="26" fill="#5C6A8A" opacity=".92"><title>Gepard — 2025-03-15 — pity 81</title></rect><rect x="699.5" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Mydei — 2025-03-20 — pity 77</title></rect><rect x="699.5" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23039 — 2025-03-20 — pity 66</title></rect><rect x="719.8" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Castorice — 2025-04-09 — pity 75</title></rect><rect x="719.8" y="57" width="2" height="26" fill="#C2646E" opacity=".92"><title>Light Cone #23000 — 2025-04-09 — pity 49</title></rect><rect x="719.9" y="57" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Light Cone #23040 — 2025-04-09 — pity 68</title></rect><rect x="720.4" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Seele — 2025-04-10 — pity 78</title></rect><rect x="724.0" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Castorice — 2025-04-13 — pity 41</title></rect><rect x="725.1" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Himeko — 2025-04-14 — pity 80</title></rect><rect x="725.1" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Castorice — 2025-04-14 — pity 45</title></rect><rect x="741.8" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Anaxa — 2025-05-01 — pity 26</title></rect><rect x="741.8" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23041 — 2025-05-01 — pity 71</title></rect><rect x="761.6" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Welt — 2025-05-21 — pity 81</title></rect><rect x="761.6" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Hyacine — 2025-05-21 — pity 75</title></rect><rect x="761.6" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23042 — 2025-05-21 — pity 66</title></rect><rect x="766.8" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>The Herta — 2025-05-26 — pity 78</title></rect><rect x="788.7" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Cipher — 2025-06-17 — pity 81</title></rect><rect x="788.7" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23043 — 2025-06-17 — pity 68</title></rect><rect x="803.5" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Phainon — 2025-07-02 — pity 74</title></rect><rect x="803.5" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23044 — 2025-07-02 — pity 71</title></rect><rect x="813.7" y="101" width="2" height="26" fill="#5C6A8A" opacity=".92"><title>Light Cone #23012 — 2025-07-12 — pity 77</title></rect><rect x="845.3" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Bronya — 2025-08-13 — pity 76</title></rect><rect x="845.3" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Hysilens — 2025-08-13 — pity 69</title></rect><rect x="845.3" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23047 — 2025-08-13 — pity 70</title></rect><rect x="864.4" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Hysilens — 2025-09-01 — pity 78</title></rect><rect x="865.5" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Cerydra — 2025-09-02 — pity 13</title></rect><rect x="865.5" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23048 — 2025-09-02 — pity 30</title></rect><rect x="887.1" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Clara — 2025-09-24 — pity 78</title></rect><rect x="887.1" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Evernight — 2025-09-24 — pity 80</title></rect><rect x="887.1" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23049 — 2025-09-24 — pity 14</title></rect><rect x="891.2" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Evernight — 2025-09-28 — pity 76</title></rect><rect x="891.2" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Evernight — 2025-09-28 — pity 6</title></rect><rect x="909.1" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23051 — 2025-10-16 — pity 66</title></rect><rect x="920.1" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Fu Xuan — 2025-10-27 — pity 55</title></rect><rect x="928.6" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Cyrene — 2025-11-05 — pity 56</title></rect><rect x="929.1" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23052 — 2025-11-05 — pity 54</title></rect><rect x="946.6" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Cyrene — 2025-11-23 — pity 76</title></rect><rect x="968.1" y="101" width="2" height="26" fill="#5C6A8A" opacity=".92"><title>Light Cone #23004 — 2025-12-14 — pity 77</title></rect><rect x="968.9" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Himeko — 2025-12-15 — pity 78</title></rect><rect x="970.9" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>The Dahlia — 2025-12-17 — pity 26</title></rect><rect x="975.0" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23050 — 2025-12-21 — pity 69</title></rect><rect x="1028.7" y="13" width="2" height="26" fill="#C2646E" opacity=".92"><title>Bronya — 2026-02-13 — pity 81</title></rect><rect x="1028.7" y="13" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Yao Guang — 2026-02-13 — pity 75</title></rect><rect x="1029.8" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23054 — 2026-02-14 — pity 72</title></rect><rect x="1046.7" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Sparxie — 2026-03-03 — pity 76</title></rect><rect x="1048.8" y="57" width="2" height="26" fill="#C2646E" opacity=".92"><title>Light Cone #23000 — 2026-03-05 — pity 67</title></rect><rect x="1051.6" y="57" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Light Cone #23053 — 2026-03-08 — pity 14</title></rect><rect x="1071.7" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Ashveil — 2026-03-28 — pity 77</title></rect><rect x="1081.4" y="101" width="2" height="26" fill="#5C6A8A" opacity=".92"><title>Welt — 2026-04-07 — pity 76</title></rect><rect x="1096.3" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Silver Wolf LV.999 — 2026-04-22 — pity 21</title></rect><rect x="1096.3" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Silver Wolf LV.999 — 2026-04-22 — pity 1</title></rect><rect x="1096.3" y="57" width="2" height="26" fill="#C2646E" opacity=".92"><title>Light Cone #23013 — 2026-04-22 — pity 17</title></rect><rect x="1096.3" y="57" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Light Cone #23057 — 2026-04-22 — pity 68</title></rect><rect x="1096.3" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Silver Wolf LV.999 — 2026-04-22 — pity 27</title></rect><rect x="1096.3" y="57" width="2" height="26" fill="#C2646E" opacity=".92"><title>Light Cone #23005 — 2026-04-22 — pity 69</title></rect><rect x="1096.3" y="57" width="2" height="26" fill="#6FBFA0" opacity=".92"><title>Light Cone #23057 — 2026-04-22 — pity 1</title></rect><rect x="1117.5" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Evanescia — 2026-05-13 — pity 58</title></rect><rect x="1117.5" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23058 — 2026-05-13 — pity 69</title></rect><rect x="1119.3" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Evanescia — 2026-05-15 — pity 53</title></rect><rect x="1131.4" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Evanescia — 2026-05-27 — pity 80</title></rect><rect x="1137.2" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Mortenax Blade — 2026-06-02 — pity 82</title></rect><rect x="1151.2" y="57" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Light Cone #23059 — 2026-06-16 — pity 60</title></rect><rect x="1186.0" y="13" width="2" height="26" fill="#E0B24C" opacity=".92"><title>Himeko • Nova — 2026-07-21 — pity 76</title></rect><rect x="1186.0" y="57" width="2" height="26" fill="#C2646E" opacity=".92"><title>Light Cone #23012 — 2026-07-21 — pity 67</title></rect></svg></div>
 <div class="legend">
@@ -200,7 +275,7 @@ h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;-
 </section>
 
 <section>
-<h2><svg class="hm" style="color:#E86FA8"><use href="#em-fx"/></svg>The ledger</h2>
+<h2><svg class="hm" style="color:#E86A80"><use href="#em-fx"/></svg>The ledger</h2>
 <div class="split">
 <div>
 <h3>Character event warp</h3>
@@ -218,13 +293,13 @@ h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;-
 </section>
 
 <section>
-<h2><svg class="hm" style="color:#9B7BE8"><use href="#em-sw"/></svg>Where your pity lands</h2>
+<h2><svg class="hm" style="color:#7E7BF5"><use href="#em-sw"/></svg>Where your pity lands</h2>
 <p class="lead">Character banner five-stars, grouped by the pull count they arrived on. Soft pity begins around 73 &mdash; and that is where almost everything of yours shows up.</p>
 <div style="max-width:620px;margin-top:24px"><div class="brow"><span class="blab">1–10</span><span class="btrack"><span class="bfill" style="width:12.1%"></span></span><span class="bval">8</span></div><div class="brow"><span class="blab">11–20</span><span class="btrack"><span class="bfill" style="width:3.0%"></span></span><span class="bval">2</span></div><div class="brow"><span class="blab">21–30</span><span class="btrack"><span class="bfill" style="width:10.6%"></span></span><span class="bval">7</span></div><div class="brow"><span class="blab">31–40</span><span class="btrack"><span class="bfill" style="width:6.1%"></span></span><span class="bval">4</span></div><div class="brow"><span class="blab">41–50</span><span class="btrack"><span class="bfill" style="width:6.1%"></span></span><span class="bval">4</span></div><div class="brow"><span class="blab">51–60</span><span class="btrack"><span class="bfill" style="width:6.1%"></span></span><span class="bval">4</span></div><div class="brow"><span class="blab">61–70</span><span class="btrack"><span class="bfill" style="width:4.5%"></span></span><span class="bval">3</span></div><div class="brow"><span class="blab">71–80</span><span class="btrack"><span class="bfill hot" style="width:100.0%"></span></span><span class="bval">66</span></div><div class="brow"><span class="blab">81–90</span><span class="btrack"><span class="bfill" style="width:16.7%"></span></span><span class="bval">11</span></div></div>
 </section>
 
 <section>
-<h2><svg class="hm" style="color:#7FD4E8"><use href="#em-th"/></svg>Standing right now</h2>
+<h2><svg class="hm" style="color:#B77CE0"><use href="#em-th"/></svg>Standing right now</h2>
 <div class="kpis">
 <div class="kpi"><div class="n">2</div><div class="l">Character pity &middot; on 50/50</div></div>
 <div class="kpi"><div class="n gold">60</div><div class="l">Light cone pity &middot; guaranteed</div></div>
@@ -234,12 +309,12 @@ h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;-
 </section>
 
 <section>
-<h2><svg class="hm" style="color:#E86FA8"><use href="#em-fx"/></svg>Personal favorites</h2>
+<h2><svg class="hm" style="color:#E86A80"><use href="#em-fx"/></svg>Personal favorites</h2>
 <p class="lead">Three units, drawn straight from the manifest below &mdash; every figure here comes from the same records, not a separate tally.</p>
 <div class="faves">
 
-<div class="fave" style="--acc:#9B7BE8">
-<svg class="emb"><use href="#em-sw"/></svg>
+<div class="fave" style="--acc:#7E7BF5">
+<svg class="emb"><use href="#pt-sw"/></svg>
 <div class="who">Silver Wolf<br>LV.999</div>
 <div class="meta">E2 &middot; 3 copies</div>
 <div class="fnums"><div><b>3</b>Pulls</div><div><b>16</b>Avg pity</div><div><b>1</b>Best pity</div></div>
@@ -251,8 +326,8 @@ h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;-
 <div class="fnote">All three landed on one day, all three won. The pity-1 copy is the luckiest pull on the account.</div>
 </div>
 
-<div class="fave" style="--acc:#7FD4E8">
-<svg class="emb"><use href="#em-th"/></svg>
+<div class="fave" style="--acc:#B77CE0">
+<svg class="emb"><use href="#pt-th"/></svg>
 <div class="who">The Herta</div>
 <div class="meta">E1 &middot; 2 copies</div>
 <div class="fnums"><div><b>2</b>Pulls</div><div><b>80</b>Avg pity</div><div><b>78</b>Best pity</div></div>
@@ -263,8 +338,8 @@ h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;-
 <div class="fnote">Both copies came out of deep pity &mdash; the only featured unit here with no early pull to its name.</div>
 </div>
 
-<div class="fave" style="--acc:#E86FA8">
-<svg class="emb"><use href="#em-fx"/></svg>
+<div class="fave" style="--acc:#E86A80">
+<svg class="emb"><use href="#pt-fx"/></svg>
 <div class="who">Fu Xuan</div>
 <div class="meta">E4 &middot; 5 copies</div>
 <div class="fnums"><div><b>5</b>Pulls</div><div><b>57</b>Avg pity</div><div><b>6</b>Best pity</div></div>
@@ -283,7 +358,7 @@ h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;-
 </section>
 
 <section>
-<h2><svg class="hm" style="color:#9B7BE8"><use href="#em-sw"/></svg>Collection</h2>
+<h2><svg class="hm" style="color:#7E7BF5"><use href="#em-sw"/></svg>Collection</h2>
 <div class="kpis">
 <div class="kpi"><div class="n">56</div><div class="l">Distinct 5&#9733; characters</div></div>
 <div class="kpi"><div class="n">49</div><div class="l">Of them limited</div></div>
@@ -297,7 +372,7 @@ h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;-
 </section>
 
 <section>
-<h2><svg class="hm" style="color:#7FD4E8"><use href="#em-th"/></svg>Full manifest</h2>
+<h2><svg class="hm" style="color:#B77CE0"><use href="#em-th"/></svg>Full manifest</h2>
 <p class="lead">All 174 five-star pulls in order, with the pity count each arrived on.</p>
 <div class="scroll" tabindex="0">
 <table><thead><tr><th>Date</th><th>Item</th><th>Pity</th><th>Outcome</th></tr></thead>
