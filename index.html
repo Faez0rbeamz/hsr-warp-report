@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@300;500;700&family=Chivo:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0D1120;--panel:#151B2E;--panel2:#1B2338;--rail:#2E3752;--paper:#E9E5DA;--dim:#8C96B0;--brass:#E0B24C;--jade:#6FBFA0;--rust:#C2646E;}
+:root{--ink:#000000;--panel:#151B2E;--panel2:#1B2338;--rail:#2E3752;--paper:#E9E5DA;--dim:#8C96B0;--brass:#E0B24C;--jade:#6FBFA0;--rust:#C2646E;}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--ink);color:var(--paper);font:400 16px/1.65 "Chivo",system-ui,sans-serif;
@@ -86,6 +86,7 @@ footer{margin-top:72px;padding-top:22px;border-top:1px solid var(--rail);font:40
 .frec li{display:flex;align-items:center;gap:9px;padding:4px 0;font:400 12px "Space Mono",monospace;color:var(--dim)}
 .frec .p{margin-left:auto;color:var(--paper);font-variant-numeric:tabular-nums}
 .fnote{margin-top:13px;padding-top:12px;border-top:1px solid #1E2539;font:400 11px/1.55 "Space Mono",monospace;color:var(--dim)}
+.bgpat{position:fixed;inset:0;width:100%;height:100%;z-index:-1;opacity:.07;pointer-events:none}
 .cast{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--rail);border:1px solid var(--rail);margin:34px 0 0}
 .cast>div{background:var(--panel);padding:20px;display:flex;align-items:center;gap:15px;border-top:2px solid var(--acc)}
 .cast .emb{width:60px;height:60px;flex:none;color:var(--acc)}
@@ -144,6 +145,20 @@ h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;-
 </symbol>
 
 </defs></svg>
+
+<svg class="bgpat" aria-hidden="true" focusable="false">
+<defs>
+<pattern id="warppat" width="330" height="330" patternUnits="userSpaceOnUse" patternTransform="rotate(-9)">
+<use href="#em-sw" x="22" y="26" width="64" height="64" style="color:#9B7BE8"/>
+<use href="#em-th" x="200" y="106" width="64" height="64" style="color:#7FD4E8"/>
+<use href="#em-fx" x="96" y="214" width="64" height="64" style="color:#E86FA8"/>
+<use href="#em-th" x="258" y="258" width="34" height="34" style="color:#7FD4E8"/>
+<use href="#em-sw" x="162" y="18" width="30" height="30" style="color:#9B7BE8"/>
+<use href="#em-fx" x="16" y="150" width="28" height="28" style="color:#E86FA8"/>
+</pattern>
+</defs>
+<rect width="100%" height="100%" fill="url(#warppat)"/>
+</svg>
 
 <header>
 <p class="eyebrow">Astral express &mdash; passenger warp manifest</p>
