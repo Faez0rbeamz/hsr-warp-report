@@ -80,8 +80,8 @@ why both tiers exist.
 
 ## Character art
 
-Generated locally with ComfyUI. See `C:\Users\Fae Sign In\AI\IMAGE-GEN-GUIDE.md`
-for the full pipeline, prompt conventions, and LoRA rules.
+Generated locally. The pipeline, prompt conventions and model rules are
+documented outside this repo — see the machine-level notes.
 
 The three cards are composed as a **triptych**: Silver Wolf turned toward centre,
 The Herta frontal, Fu Xuan turned inward from the other side. Preserve that if
