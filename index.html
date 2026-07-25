@@ -103,13 +103,18 @@ background:linear-gradient(90deg,transparent,rgba(255,61,165,.55) 22%,rgba(34,21
 box-shadow:0 0 22px 3px rgba(255,61,165,.16)}
 .bgscan{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
 background:repeating-linear-gradient(0deg,rgba(190,225,255,.028) 0 1px,transparent 1px 3px)}
-.bgpat{position:fixed;inset:0;width:100%;height:100%;z-index:-2;opacity:.055;pointer-events:none}
+.bgpat{position:fixed;inset:0;width:100%;height:100%;z-index:-2;opacity:.065;pointer-events:none}
 .cast{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--rail);border:1px solid var(--rail);margin:34px 0 0}
 .cast>div{background:var(--panel);padding:20px;display:flex;align-items:center;gap:15px;border-top:2px solid var(--acc)}
 .cast .emb{width:74px;height:74px;flex:none;color:var(--acc)}
 .cast .nm{font-family:"Anybody",sans-serif;font-weight:700;font-stretch:112%;font-size:16px;line-height:1.12;text-transform:uppercase;color:var(--acc)}
 .cast .rl{font:400 10px/1.45 "Space Mono",monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin-top:6px}
 .fave .emb{width:104px;height:104px;color:var(--acc);margin:0 0 16px}
+.fave.bg{position:relative;overflow:hidden;padding-top:248px}
+.fave.bg .art{position:absolute;inset:0;background-size:cover;background-position:center top;z-index:0}
+.fave.bg .scrim{position:absolute;inset:0;z-index:1;
+background:linear-gradient(180deg,rgba(21,27,46,0) 0%,rgba(21,27,46,.48) 30%,rgba(21,27,46,.92) 53%,var(--panel) 64%)}
+.fave.bg>*:not(.art):not(.scrim){position:relative;z-index:2}
 h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;--ring1:0;--ring2:0}
 @media(max-width:720px){.split{grid-template-columns:1fr}ul.eids{columns:1}.railbox svg{height:150px}.faves{grid-template-columns:1fr}.cast{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:no-preference){.kpi .n,.ratio{animation:rise .5s ease-out both}@keyframes rise{from{opacity:0;transform:translateY(6px)}}}
@@ -335,8 +340,8 @@ h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;-
 <p class="lead">Three units, drawn straight from the manifest below &mdash; every figure here comes from the same records, not a separate tally.</p>
 <div class="faves">
 
-<div class="fave" style="--acc:#7E7BF5">
-<svg class="emb"><use href="#pt-sw"/></svg>
+<div class="fave bg" style="--acc:#7E7BF5">
+<div class="art" style="background-image:url('char-silver-wolf.jpg')"></div><div class="scrim"></div>
 <div class="who">Silver Wolf<br>LV.999</div>
 <div class="meta">E2 &middot; 3 copies</div>
 <div class="fnums"><div><b>3</b>Pulls</div><div><b>16</b>Avg pity</div><div><b>1</b>Best pity</div></div>
@@ -348,8 +353,8 @@ h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;-
 <div class="fnote">All three landed on one day, all three won. The pity-1 copy is the luckiest pull on the account.</div>
 </div>
 
-<div class="fave" style="--acc:#B77CE0">
-<svg class="emb"><use href="#pt-th"/></svg>
+<div class="fave bg" style="--acc:#B77CE0">
+<div class="art" style="background-image:url('char-the-herta.jpg')"></div><div class="scrim"></div>
 <div class="who">The Herta</div>
 <div class="meta">E1 &middot; 2 copies</div>
 <div class="fnums"><div><b>2</b>Pulls</div><div><b>80</b>Avg pity</div><div><b>78</b>Best pity</div></div>
@@ -360,8 +365,8 @@ h2 .hm{width:23px;height:23px;vertical-align:-4px;margin-right:11px;opacity:.9;-
 <div class="fnote">Both copies came out of deep pity &mdash; the only featured unit here with no early pull to its name.</div>
 </div>
 
-<div class="fave" style="--acc:#E86A80">
-<svg class="emb"><use href="#pt-fx"/></svg>
+<div class="fave bg" style="--acc:#E86A80">
+<div class="art" style="background-image:url('char-fu-xuan.jpg')"></div><div class="scrim"></div>
 <div class="who">Fu Xuan</div>
 <div class="meta">E4 &middot; 5 copies</div>
 <div class="fnums"><div><b>5</b>Pulls</div><div><b>57</b>Avg pity</div><div><b>6</b>Best pity</div></div>
